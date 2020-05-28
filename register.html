@@ -1,77 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-    
-    <!-- Register -->
-    <div class="layout" id="register">
-        <div class="container"> 
-            <div class="row">
-                <div class="col-sm-12 col-md-4 offset-md-4">
-                    <div class="card card-body">
-                        <h4 class = "card-subtitle text-center">Register</h4>
-                        <form id="callMeForm" data-toggle="validator" data-focus="false">
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="fname" name="fname" onblur="blankErrorMsg ('fname', 'error-fname')"
-                                 title = "Please Fill this. First name must not include number">
-                                <label class="label-control" fors="fname">First Name</label>
-                                <div class="help-block with-errors" id="error-fname"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="lname" name="lname" onblur="blankErrorMsg ('lname', 'error-lname')"
-                                title = "Please Fill this. Last name must not include number">
-                                <label class="label-control" for="lname">Last Name</label>
-                                <div class="help-block with-errors" id="error-lname"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="phone" name="phone" 
-                                        onblur="blankErrorMsg ('phone', 'error-phone')"
-                                        title = "Please Fill this.
-                                        Phone number minium 10 digits maximum 11 digits
-                                        'xxxxxxxxxxx' or 
-                                        'xxxxxxxxxx'" minlength="10" maxlength="11">
-                                <label class="label-control" for="phone">Contact Number</label>
-                                <div class="help-block with-errors" id="error-phone"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control-input" id="email" name="email" 
-                                onblur="blankErrorMsg ('email', 'error-email')" 
-                                title = "Please Fill Your Email. Must be in this form
-                                xxx@xxxxx.xxx or xxx@xxxxx.xxx.xx">
-                                <label class="label-control" for="email">Email</label>
-                                <div class="help-block with-errors" id="error-email"></div>
-                            </div>
+<!-- Register -->
+<div class="layout" id="register">
+    <div class="container"> 
+        <div class="row">
+            <div class="col-sm-12 col-md-4 offset-md-4">
+                <div class="card card-body">
+                    <h4 class = "card-subtitle text-center">Register</h4>
+                    <form id="callMeForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="fname" name="fname" onblur="blankErrorMsg ('fname', 'error-fname')"
+                                title = "Please Fill this. First name must not include number">
+                            <label class="label-control" fors="fname">First Name</label>
+                            <div class="help-block with-errors" id="error-fname"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="lname" name="lname" onblur="blankErrorMsg ('lname', 'error-lname')"
+                            title = "Please Fill this. Last name must not include number">
+                            <label class="label-control" for="lname">Last Name</label>
+                            <div class="help-block with-errors" id="error-lname"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="phone" name="phone" 
+                                    onblur="blankErrorMsg ('phone', 'error-phone')"
+                                    title = "Please Fill this.
+                                    Phone number minium 10 digits maximum 11 digits
+                                    'xxxxxxxxxxx' or 
+                                    'xxxxxxxxxx'" minlength="10" maxlength="11">
+                            <label class="label-control" for="phone">Contact Number</label>
+                            <div class="help-block with-errors" id="error-phone"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="email" name="email" 
+                            onblur="blankErrorMsg ('email', 'error-email')" 
+                            title = "Please Fill Your Email. Must be in this form
+                            xxx@xxxxx.xxx or xxx@xxxxx.xxx.xx">
+                            <label class="label-control" for="email">Email</label>
+                            <div class="help-block with-errors" id="error-email"></div>
+                        </div>
 
-                            <!-- P A S S W O R D -->
-                            <div class = "form-group">
-                                <input type = "password" class = "form-control-input" name = "password" id = "password" onblur="blankErrorMsg ('password', 'error-password')"
-                                title = "Password Must be 12 characters" minlength="12" maxlength="12">
-                                <label class="label-control" for="password">Password</label>
-                                <div class="help-block with-errors" id="error-password"></div>
-                            </div>
+                        <!-- P A S S W O R D -->
+                        <div class = "form-group">
+                            <input type = "password" class = "form-control-input" name = "password" id = "password" onblur="blankErrorMsg ('password', 'error-password')"
+                            title = "Password Must be 12 characters" minlength="12" maxlength="12">
+                            <label class="label-control" for="password">Password</label>
+                            <div class="help-block with-errors" id="error-password"></div>
+                        </div>
 
-                            <div class="form-group">
-                                <select class="form-control-select" id="fcourse" name="fcourse"  title="Please choose a course" onblur="blankErrorMsg ('fcourse', 'error-course')">
-                                    <option class="select-option" value="" disabled selected>Interested in...</option>
-                                    <option class="select-option" value="HTML CSS">INTRO TO HTML & CSS</option>
-                                    <option class="select-option" value="Python Intro">INTRO TO PYTHON PROGRAMMING</option>
-                                    <option class="select-option" value="JavaScript Intro">INTRO TO JAVASCRIPT</option>
-                                </select>
-                                <div class="help-block with-errors" id="error-course"></div>
-                            </div>
-    
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button" id="submit">Register</button>
-                            </div>
-                            <div class="form-message">
-                                <div id="lmsgSubmit" class="h3 text-center hidden"></div>
-                            </div>
-                        </form>
-                        <!-- end of call me form -->
-                    </div> <!--End of Card-->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+                        <div class="form-group">
+                            <select class="form-control-select" id="fcourse" name="fcourse"  title="Please choose a course" onblur="blankErrorMsg ('fcourse', 'error-course')">
+                                <option class="select-option" value="" disabled selected>Interested in...</option>
+                                <option class="select-option" value="HTML CSS">INTRO TO HTML & CSS</option>
+                                <option class="select-option" value="Python Intro">INTRO TO PYTHON PROGRAMMING</option>
+                                <option class="select-option" value="JavaScript Intro">INTRO TO JAVASCRIPT</option>
+                            </select>
+                            <div class="help-block with-errors" id="error-course"></div>
+                        </div>
 
-        </div> <!-- end of container -->
-    </div>
-    <!-- end of Register -->
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button" id="submit">Register</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="lmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of call me form -->
+                </div> <!--End of Card-->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
 
-</html>
+    </div> <!-- end of container -->
+</div>
+<!-- end of Register -->
