@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+    <!-- Register -->
+    <div class="layout" id="login">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-sm-12 col-md-4 offset-md-4">
+                    <div class="card card-body">
+                        <h4 class = "card-subtitle text-center">Login</h4>
+                        <form id="callMeForm" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="email" name="email"
+                                onblur="blankErrorMsg ('email', 'error-email')" title = "Please Fill Your Email. Must be in this form
+                                xxx@xxxxx.xxx or xxx@xxxxx.xxx.xx">
+                                <label class="label-control" for="email">Email</label>
+                                <div class="help-block with-errors" id="error-email"></div>
+                            </div>
+
+                            <!-- P A S S W O R D -->
+                            <div class = "form-group">
+                                <input type = "password" class = "form-control-input" name = "password" id = "password"
+                                onblur="blankErrorMsg ('password', 'error-password')"
+                                 title = "Password Must be 12 characters" minlength="12" maxlength="12">
+                                <label class="label-control" for="password">Password</label>
+                                <div class="help-block with-errors" id="error-password"></div>
+                            </div>
+
+    
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button" id="submit">Login</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="lmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                        <!-- end of call me form -->
+                    </div> <!--End of Card-->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+
+        </div> <!-- end of container -->
+    </div>
+    <!-- end of Login -->
+
+
+</html>

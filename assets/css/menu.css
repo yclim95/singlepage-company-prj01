@@ -1,0 +1,12 @@
+/* Template: ABC Learning Centre (WDD Module - ASSIGNMENT)
+Author: Lim Yao Cheng
+Created: 2020
+Description: Custom CSS - To be APPLY for all pages except HOME Page (index.html)
+*/
+
+/* REMOVE HERO BANNER HEADER FOR TOP MENU BAR
+/* Navigation */
+.navbar-custom {
+    background-color: #113448 !important;
+    position: relative;
+}

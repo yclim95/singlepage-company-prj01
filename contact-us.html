@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Contact Us -->
+    <div class = "layout" id="contactus">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-center contact">
+                        <div class="section-title">CONTACT</div>
+                        <h2>Let's Get Connected</h2>
+                        <p class="grey"><i class="fas fa-phone-square"></i> Contact Number: +6017-6709532</p>
+                        <p class="grey"><i class="fas fa-envelope"></i> Email: info@abclearning.com</p>
+                    </div>
+                </div> <!-- end of col -->
+
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <div class="section-title">ENQURIES</div>
+                <!-- Call Me Form -->
+                <form id="callMeForm" data-toggle="validator" data-focus="false">
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="name" name="name"  onblur="blankErrorMsg ('name', 'error-name')"
+                        title = "Please Fill this. Full name must not include number">
+                        <label class="label-control" for="name">Name</label>
+                        <div class="help-block with-errors" id="error-name"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="phone" name="phone"  onblur="blankErrorMsg('phone','error-phone')" 
+                                 title = "Please Fill this.
+                                Phone number mimium 10 digits maximum 11 digits
+                                'xxxxxxxxxxx' or 
+                                'xxxxxxxxxx'" minlength="10" maxlength="11">
+                        <label class="label-control" for="phone">Contact Number</label>
+                        <div class="help-block with-errors" id="error-phone"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control-input" id="email" name="email"
+                        onblur = "blankErrorMsg('email', 'error-email')" title = "Please Fill Your Email. Must be in this form
+                        xxx@xxxxx.xxx or xxx@xxxxx.xxx.xx">
+                        <label class="label-control" for="email">Email</label>
+                        <div class="help-block with-errors" id="error-email"></div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control-select" id="form-course" required onblur="blankErrorMsg('form-course','error-course')" title="Please choose a course">
+                            <option class="select-option" value="" disabled selected>Interested in...</option>
+                            <option class="select-option" value="HTML CSS">INTRO TO HTML & CSS</option>
+                            <option class="select-option" value="Python Intro">INTRO TO PYTHON PROGRAMMING</option>
+                            <option class="select-option" value="JavaScript Intro">INTRO TO JAVASCRIPT</option>
+                        </select>
+                        <div class="help-block with-errors" id="error-course"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="form-control-submit-button" id="submit">Submit</button>
+                    </div>
+                    <div class="form-message">
+                        <div id="lmsgSubmit" class="h3 text-center hidden"></div>
+                    </div>
+                </form>
+                <!-- end of call me form -->
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div>
+    <!-- end of Contact Us -->
+
+</html>
